@@ -6,6 +6,7 @@ app_email = "example@gmail.com"
 app_license = "mit"
 # required_apps = []
 
+#fixtures =["Vehicle Type", "Rentals Settings"]
 # Includes in <head>
 # ------------------
 
@@ -122,18 +123,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
+#doc_events = {
+#     "ToDo":{
+#         "before_insert": "apps.rentals.rentals.www.api"
+#     }
 # }
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+#scheduler_events = {
 # 	"all": [
 # 		"rentals.tasks.all"
 # 	],
@@ -143,13 +142,18 @@ app_license = "mit"
 # 	"hourly": [
 # 		"rentals.tasks.hourly"
 # 	],
-# 	"weekly": [
-# 		"rentals.tasks.weekly"
-# 	],
+# 	"Cron": {
+#         "30 15 * * 3":
+#         [
+# 		"apps.rentals.rentals.api.send_payment_reminders"
+# 	]
+#     }
+# }
 # 	"monthly": [
 # 		"rentals.tasks.monthly"
 # 	],
 # }
+
 
 # Testing
 # -------

@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2024-08-12 18:33:36.825107",
+ "date_changed": "insurance_expired",
+ "days_in_advance": 4,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Vehicle",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Your Insurance Expiring with in 4 days</p>\n",
+ "message_type": "HTML",
+ "modified": "2024-08-12 19:05:01.237534",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Insurance Vehicle Expired",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Insurance for {{doc.title}} expiring in 4 days "
+}
